@@ -1,0 +1,67 @@
+Users: Usuarios
+New user: Crear usuario
+Username: Usuario
+First name: Nombre
+Last name: Apellido
+Email: Correo electrónico
+Password: Contraseña
+Role: Rol
+Active: Activo
+Create user: Crear
+Your username: Nombre de usuario
+Your first name: Ingrese su nombre
+Your last name: Ingrese su apellido
+Your email: Ingrese su correo electrónico
+Your password: Ingrese su contraseña
+Select a role: Seleccione un rol
+Administrator: Administrador
+User: Usuario
+Created: Creado
+Updated: Actualizado
+View: Ver
+Edit: Editar
+Delete: Eliminar
+Actions: Acciones
+Exit: Salir
+Assignments: Asignaciones
+List users: Lista de usuarios
+Task Assignments: Asignación de tareas
+The user has been created.: El usuario ha sido creado.
+Total records: Cantidad de registros
+Next: Siguiente
+Previous: Anterior
+User not found.: Usuario no encontrado.
+Edit user: Editar usuario
+The user has been modified.: El usuario ha sido modificado.
+Enabled: Habilitado
+Disabled: Deshabilitado
+Delete user: Eliminar usuario
+The user has been deleted.: El usuario ha sido eliminado.
+Are you sure?: Estas seguro?
+The user could not be deleted.: El usuario no puede ser eliminado.
+Search: Buscar
+Search user: Buscar usuario
+No search results: Búsqueda sin resultados
+Tasks: Tareas
+New task: Crear tarea
+New Task: Crear Tarea
+Title: Título
+Task title: Título de la tarea
+Description: Descripción
+Task description: Descripción de la tarea
+Create task: Crear tarea
+List task: Lista de tareas
+Status: Estado
+Task: Tareas
+The task has been created.: La tarea ha sido creada.
+Edit task: Editar tarea
+Update task: Actualizar tarea
+The task has been modified.: La tarea ha sido modificada.
+Waiting: Pendiente
+Finish: Completo
+Delete task: Eliminar tarea
+The task has been deleted.: La tarea ha sido eliminada.
+Date: Fecha
+My tasks: Mis tareas
+Welcome: Bienvenido
+Administrator: Administrador

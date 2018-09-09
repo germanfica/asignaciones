@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+	{{ parent() }}
+	<div class='main container'>
+		<div class='row well'>
+			<div class='col-md-6'>
+				<div class='page-header'>
+					<h2>New user</h2>
+				</div>
+				{{ form_start(form) }}
+        {{ form_widget(form) }}
+				{{ form_end(form) }}
+			</div>
+		</div>
+	</div>
+{% endblock %}

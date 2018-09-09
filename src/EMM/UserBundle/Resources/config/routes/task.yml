@@ -1,0 +1,52 @@
+#Ruta principal, osea panel de usuario
+emm_task_index:
+    path:     /
+    defaults: { _controller: EMMUserBundle:Task:index }
+#Ruta para agregar usuarios
+emm_task_add:
+    path:     /add
+    defaults: { _controller: EMMUserBundle:Task:add }
+#Ruta para crear un registro
+emm_task_create:
+    path:     /create
+    defaults: { _controller: EMMUserBundle:Task:create }
+    methods: POST
+#Ruta para editar usuarios
+emm_task_edit:
+    path:     /edit/{id}
+    defaults: { _controller: EMMUserBundle:Task:edit }
+#Ruta para actualizar usuarios
+emm_task_update:
+    path:     /update/{id}
+    defaults: { _controller: EMMUserBundle:Task:update }
+    methods: [POST, PUT]
+#Ruta para ver usuarios
+emm_task_view:
+    path:     /view/{id}
+    defaults: { _controller: EMMUserBundle:Task:view }
+#Ruta para eliminar usuarios
+emm_task_delete:
+    path:     /delete/{id}
+    defaults: { _controller: EMMUserBundle:Task:delete }
+    methods: [POST, DELETE]
+#Redireccionamiento
+emm_task_redirect_add:
+    path:     /create
+    defaults: { _controller: EMMUserBundle:Task:add }
+
+emm_task_custom:
+    path:     /custom
+    defaults: { _controller: EMMUserBundle:Task:custom }
+
+emm_task_process:
+    path:     /process/{id}
+    defaults: { _controller: EMMUserBundle:Task:process }
+    methods:  [POST, PUT]
+
+#Redireccionamiento Edit
+emm_task_redirect_edit:
+    path:     /update/{id}
+    defaults:
+      _controller: EMMUserBundle:Task:edit
+      path: /edit
+      permanent: true

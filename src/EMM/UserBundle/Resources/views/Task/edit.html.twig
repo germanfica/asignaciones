@@ -1,0 +1,38 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+  {{ parent() }}
+    {{ include('EMMUserBundle:Task:Messages/success.html.twig') }}
+  <div class='main container'>
+		<div class='row well'>
+			<div class='col-md-6'>
+        <div class='page-header'>
+					<h2>{% trans %}Edit task{% endtrans %}</h2>
+          {{ form_start(form, { 'attr' : { 'novalidate' : 'novalidate', 'role' : 'form' }}) }}
+            <div class="form-group">
+              {{ form_label(form.title) }}
+              {{ form_widget(form.title, { 'attr' : {'class' : 'form-control', 'placeholder' : 'Your username'} }) }}
+              <span class="text-danger">{{ form_errors(form.title) }}</span>
+            </div>
+
+            <div class="form-group">
+              {{ form_label(form.description) }}
+              {{ form_widget(form.description, { 'attr' : {'class' : 'form-control', 'placeholder' : 'Your username'} }) }}
+              <span class="text-danger">{{ form_errors(form.description) }}</span>
+            </div>
+
+            <div class="form-group">
+  						{{ form_label(form.user) }}
+  						{{ form_widget(form.user, { 'attr' : {'class' : 'form-control'}}) }}
+  						<span class="text-danger">{{ form_errors(form.user) }}</span>
+  					</div>
+
+            <p>
+  						{{ form_widget(form.save, { 'label' : 'Update task', 'attr' : { 'class': 'btn btn-success' } }) }}
+  					</p>
+          {{ form_end(form) }}
+				</div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

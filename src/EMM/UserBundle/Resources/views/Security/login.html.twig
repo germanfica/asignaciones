@@ -1,0 +1,42 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('public/css/signin.css') }}">
+{% endblock %}
+
+{% block body %}
+
+  <div class="container">
+
+      <form action="{{ path('emm_user_login_check') }}" method="post" class="form-signin">
+        <h2 class="form-signin-heading">{{ 'Please sign in'|trans }}</h2>
+
+        {% if error %}
+          <div class="text-danger">
+            <p>
+              <strong>
+                {{ error.messageKey|trans(error.messageData, 'security') }}
+              </strong>
+            </p>
+          </div>
+        {% endif %}
+
+        <label for="username">Username:</label>
+        <input class="form-control" type="text" id="username" name="_username" value="{{ last_username }}" />
+
+        <label for="password">Password:</label>
+        <input class="form-control" type="password" id="password" name="_password" />
+
+        <input type="hidden" name="_target_path" value="emm_user_home" />
+
+        {#
+            If you want to control the URL the user
+            is redirected to on success (more details below)
+            <input type="hidden" name="_target_path" value="/account" />
+        #}
+        <p></p>
+        <button class="btn btn-success" type="submit">Login</button>
+      </form>
+    </div>
+{% endblock %}

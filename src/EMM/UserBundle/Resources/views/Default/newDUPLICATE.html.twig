@@ -1,0 +1,23 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+	{{ parent() }}
+	<div class='main container'>
+		<div class='row well'>
+			<div class='col-md-6'>
+				<div class='page-header'>
+					<h2>New user</h2>
+				</div>
+				{{ form_start(form, { 'attr': {'role' : 'form'} }) }}
+
+					<div class="form-group">
+						{{ form_label(form.username) }}
+						{{ form_widget(form.username, { 'attr' : {'class' : 'form-control', 'placeholder' : 'Your username'} }) }}
+						<span class="text-danger">{{ form_errors(form.username) }}</span>
+					</div>
+
+				{{ form_end(form) }}
+			</div>
+		</div>
+	</div>
+{% endblock %}
